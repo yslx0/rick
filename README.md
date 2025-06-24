@@ -522,10 +522,10 @@ function Library:create_ui()
     end
 
     local Tensen = Instance.new('ScreenGui')
-    Tensen.ResetOnSpawn = false
-    Tensen.Name = 'prince'
-    Tensen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    Tensen.Parent = CoreGui
+    alussive.ResetOnSpawn = false
+    alussive.Name = 'Rick Ap'
+    alussive.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    alussive.Parent = CoreGui
     
     local Container = Instance.new('Frame')
     Container.ClipsDescendants = true
@@ -538,7 +538,7 @@ function Library:create_ui()
     Container.Size = UDim2.new(0, 0, 0, 0)
     Container.Active = true
     Container.BorderSizePixel = 0
-    Container.Parent = Tensen
+    Container.Parent = alussive
     
     local UICorner = Instance.new('UICorner')
     UICorner.CornerRadius = UDim.new(0, 10)
@@ -583,7 +583,7 @@ function Library:create_ui()
     ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
     ClientName.TextColor3 = Color3.fromRGB(152, 181, 255)
     ClientName.TextTransparency = 0.20000000298023224
-    ClientName.Text = 'Luiz eduardo '
+    ClientName.Text = 'Prince '
     ClientName.Name = 'ClientName'
     ClientName.Size = UDim2.new(0, 31, 0, 13)
     ClientName.AnchorPoint = Vector2.new(0, 0.5)
@@ -662,7 +662,7 @@ function Library:create_ui()
     local UIScale = Instance.new('UIScale')
     UIScale.Parent = Container    
     
-    self._ui = Tensen
+    self._ui = alussive
 
     local function on_drag(input: InputObject, process: boolean)
         if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then 
